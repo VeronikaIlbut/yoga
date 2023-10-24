@@ -7,7 +7,7 @@
 }
 .classes-box {
     margin: 0 auto;
-    width: 480px;
+    width: 550px;
     height: 600px;
 }
 .classes-box__title {
@@ -21,10 +21,23 @@
     font-family: 'HKGrotesk-Medium', san-serif;
     font-size: 24px;
 }
+.classes-box__price__green {
+    width: 41px;
+    height: 28px;
+    background: #AEC1B9;
+}
 .classes-box__pricing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     font-family: 'HKGrotesk-Medium', san-serif;
     font-size: 24px;
+}
+.classes-box__pricing__yellow {
+    width: 34px;
+    height: 24px;
+    background: #D8D4C0;
 }
 .classes-box__subtitle {
     text-align: center;
