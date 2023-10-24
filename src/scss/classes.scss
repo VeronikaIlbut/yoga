@@ -1,0 +1,184 @@
+.classes {
+    margin: 0 auto;
+    width: 100%;
+    height: 1100px;
+    background-color: #FAFAFA;
+    clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 4vw), 0 100%);
+}
+.classes-box {
+    margin: 0 auto;
+    width: 480px;
+    height: 600px;
+}
+.classes-box__title {
+    text-align: center;
+    font-family: 'HKGrotesk-Medium', sans-serif;
+    font-size: 38.4;
+    padding-top: 140px;
+}
+.classes-box__price {
+    text-align: center;
+    font-family: 'HKGrotesk-Medium', san-serif;
+    font-size: 24px;
+}
+.classes-box__pricing {
+    text-align: center;
+    font-family: 'HKGrotesk-Medium', san-serif;
+    font-size: 24px;
+}
+.classes-box__subtitle {
+    text-align: center;
+    font-family: 'HKGrotesk-Medium', sans-serif;
+    font-size: 25.2px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.classes-box__button {
+    margin: 0 auto;
+    width: 297px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    background: #2B2C32;
+    color: #FFFFFF;
+    font-family: 'HKGrotesk-Medium', sans-serif;
+    font-size: 21px;
+    line-height: 2.2;
+    transition: all .5s ease-in-out;
+}
+.classes-box__button_hover:hover {
+    background-color: #AEC1B9;
+}
+.classes-container {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-items: center;
+}
+.classes-container__time {
+    font-family: 'HKGrotesk-Medium', sans-serif;
+    font-size: 28px;
+    margin-bottom: 1.5rem;
+}
+.classes-container__text {
+    font-family: 'HKGrotesk-Light', sans-serif;
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+}
+.classes-container-map {
+    display: none;
+    padding-bottom: 10px;
+}
+.classes-container-map__img {
+    width: 17px;
+    height: 27px;
+}
+.classes-container-map__link {
+    font-family: 'HKGrotesk-Regular', sans-serif;
+    font-size: 16px;
+    padding-left: 1rem;
+    color: #CC715E;
+    text-decoration: none;
+}
+.classes-container__button {
+    display: grid;
+    width: 276px;
+    height: 77px;
+    display: flex;
+    justify-content: center;
+    font-family: 'HKGrotesk-Medium', san-serif;
+    font-weight: 400;
+    line-height: 3;
+    font-size: 21.6px;
+    color: #1D1D1D;
+    background-color: #EDEDED;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
+}
+
+@media screen and (max-width: 1400px) {
+    .classes-box__title {
+        font-size: 32px;
+    }
+    .classes-box__price {
+        font-size: 20px;
+    }
+    .classes-box__pricing {
+        font-size: 20px;
+    }
+    .classes-box__subtitle {
+        font-size: 21px;
+        padding-top: 70px;
+    }
+    .classes-box__button {
+        font-size: 18px;
+        width: 247px;
+        height: 42px;
+    }
+    .classes-box {
+        height: 550px;
+    }
+    .classes-container__time {
+        font-size: 24px;
+    }
+    .classes-container__text {
+        font-size: 20px;
+    }
+    .classes-container__button {
+        width: 230px;
+        height: 64px;
+        font-size: 18px;
+    }
+    .classes-container {
+        margin-top: 10px;
+    }
+    .classes {
+        height: 900px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .classes-box__title {
+        font-size: 20px;
+        padding-top: 80px;
+    }
+    .classes-box__price {
+        font-size: 16px;
+    }
+    .classes-box__pricing {
+        font-size: 16px;
+    }
+    .classes-box__subtitle {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    .classes-box {
+        height: 400px;
+        width: 380px;
+    }
+    .classes-container {
+        display: block;
+        padding-left: 40px;
+    }
+    .classes-container__time {
+        font-size: 21px;
+    }
+    .classes-container__text {
+        font-size: 18px;
+    }
+    .classes-container__button {
+        width: 212px;
+        height: 52px;
+        font-size: 16px;
+    }
+    .classes-container-map {
+        display: flex;
+    }
+}
+@media screen and (max-width: 400px) {
+    .classes-box {
+        width: 100%;
+    }
+}

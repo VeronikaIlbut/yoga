@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+}
+.header {
+    width: 100%;
+    margin: 0 auto;
+}
+.header-navigation {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    height: 84px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    font-family: 'HKGrotesk-Medium', san-serif;
+    font-weight: 400;
+    font-size: 19.2px;
+    line-height: 1.7;
+}
+.header-navigation__logo {
+    width: 172px;
+    height: 24px;
+    margin-left: 5%;
+    margin-right: 38%;
+    cursor: pointer;
+}
+.header-navigation-row {
+    width: 544px;
+}
+.header-navigation-link__button {
+    width: 86px;
+    height: 86px;
+    cursor: pointer;
+    position: absolute;
+    text-transform: uppercase;
+    text-align: left;
+    color: #fff;
+    z-index: 1;
+    background-color: #2b2c32;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    width: 5rem;
+    height: 5rem;
+    padding-left: 1rem;
+    font-family: HKGrotesk-Bold, sans-serif;
+    font-size: 1rem;
+    position: absolute;
+    top: 1.1rem;
+    right: 2.6rem;
+    transform: rotate(-7deg);    
+    transition: all 0.25s ease-in-out;
+}
+.header-navigation-link__button_hover:hover {
+    background-color: #CC715E;
+    transform: rotate(3deg);
+}
+.header-navigation-row__link {
+    display: inline-block;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'HKGrotesk-Medium', san-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #1D1D1D;
+    margin-left: 50px;
+}
+.header-navigation-row__link_hover:hover {
+    color: #AEC1B9;
+}
+.header-box {
+    width: 100%;
+    height: 700px;
+    background-image: url(/src/img/hero-med.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    position: relative;
+    margin-top: 84px;
+}
+.header-box-lg {
+    width: 430px;
+    height: 200px;
+    position: absolute;
+    top: 150px;
+    left: 8%;
+}
+.header-box-lg__title {
+    font-family: 'HKGrotesk-Light', sans-serif;
+    font-weight: normal;
+    color: #1D1D1D;
+    font-size: 34px;
+    font-weight: 400;
+}
+.header-box-lg__line {
+    border-bottom: 4px solid #AEC1B9;
+    width: 120px;
+}
+.header-box-lg__button {
+    width: 208px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    background-color: #1D1D1D;
+    text-decoration: none;
+    font-family: 'HKGrotesk-Medium', san-serif;
+    font-weight: 400;
+    line-height: 3;
+    font-size: 19.2px;
+    color: white;
+    margin-top: 80px;
+    cursor: pointer;
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
+    transition: all 0.4s ease-out;
+}
+
+.header-box-lg__button_hover:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 82%);
+    background-color: #1D1D1D;
+}
+.header-box-lg__link__scroll {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -40px;
+    left: 47.5%;
+}
+.header-box-lg__link__scroll_hover:hover {
+    transform: translateY(3px);
+}
+.header-box-lg__img {
+    width: 271px;
+    height: 150px;
+    position: absolute;
+    top: 150px;
+    left: 70%;
+}
+.header-box-lg__icon {
+    width: 160px;
+    height: 75px;
+    position: absolute;
+    left: 40%;
+    top: 40px;
+    display: none;
+    background-size: 100%;
+}
+@media screen and (max-width: 1400px) {
+    .header-navigation-link__button {
+        display: none;
+    }
+    .header-navigation__logo {
+        margin-right: 30%;
+    }
+    .header-box-lg__title {
+        font-size: 30px;
+    }
+    .header-navigation {
+        height: 70px;
+    }
+    .header-box {
+        margin-top: 70px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .header-navigation__logo {
+        margin-right: 20%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .header-box-lg {
+        display: none;
+    }
+    .header-navigation-row {
+        display: none;
+    }
+    .header-navigation-link__button {
+        display: flex;
+        width: 72px;
+        height: 72px;
+        font-size: 12px;
+        padding-top: 22px;
+    }
+    .header-navigation {
+        height: 60px;
+    }
+    .header-box-lg__link__scroll {
+        display: none;
+    }
+    .header-box {
+        margin-top: 0px;
+    }
+    .header-box-lg__icon {
+        display: flex;
+    }
+    .header-box-lg__img {
+        display: none;
+    }
+    .header-navigation {
+        position: static;
+    }
+}
+@media screen and (max-width: 500px) {
+    .header-box-lg__icon {
+        left: 30%;
+    }
+}
+

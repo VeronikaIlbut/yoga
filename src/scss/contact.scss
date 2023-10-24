@@ -1,0 +1,35 @@
+.contact {
+    width: 100%;
+    margin: 0 auto;
+    height: 270px;
+    background: #FAFAFA;
+}
+.contact-box {
+    margin: 0 auto;
+    width: 200px;
+    height: 100px;
+}
+.contact-box__logo {
+    margin: 0 auto;
+    width: 172px;
+    height: 24px;
+    padding-top: 80px;
+    display: flex;
+}
+.contact-box-img__icon {
+    width: 41px;
+    height: 39px;
+    padding: 10px;
+    padding-top: 40px;
+}
+
+@media screen and (max-width: 210px) {
+    .contact-box {
+        width: 100%;
+    }
+    .contact-box-img__icon {
+        padding: 1px;
+        padding-top: 40px;
+        margin: 0 auto;
+    }
+}

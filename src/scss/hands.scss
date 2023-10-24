@@ -1,0 +1,126 @@
+.hands {
+    margin: 0 auto;
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+.hands-box {
+    margin: 0 auto;
+    height: 1000px;
+    width: 540px;
+}
+.hands-box__title {
+    font-family: 'HKGrotesk-Medium', san-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: 38.4px;
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+.hands-box__foto {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    display: flex;
+}
+.hands-box__text {
+    font-family: 'HKGrotesk-Medium', san-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.hands-box__button {
+    margin: 0 auto;
+    width: 222px;
+    height: 63px;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #AEC1B9;
+    justify-content: center;
+    line-height: 3.5;
+    font-size: 19.2;
+    transition: 0.5s ease-in-out;
+}
+.hands-box__button_hover:hover {
+    background-color: #AEC1B9;
+    color: white;
+}
+.hands-box__relax {
+    position: absolute;
+    top: 8rem;
+    left: -2rem;
+    width: 259px;
+    height: 238px;
+}
+.hands-box__recharge {
+    position: absolute;
+    overflow: hidden;
+    top: 40rem;
+    right: -1rem;
+    width: 252px;
+    height: 208px;
+}
+
+@media screen and (max-width: 1400px) {
+    .hands {
+        height: 900px;
+    }
+    .hands-box {
+        width: 500px;
+    }
+    .hands-box__title {
+        font-size: 32px;
+    }
+    .hands-box__foto {
+        width: 125px;
+        height: 125px;
+    }
+    .hands-box__text {
+        font-size: 20px;
+    }
+    .hands-box__button {
+        width: 185px;
+        height: 52px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .hands-box {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 800px){
+    .hands {
+        height: 500px;
+    }
+    .hands-box {
+        width: 100%;
+    }
+    .hands-box__title {
+        font-size: 20px;
+        padding-top: 50px;
+    }
+    .hands-box__text {
+        font-size: 16px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .hands-box__relax {
+        display: none;
+    }
+    .hands-box__recharge {
+        display: none;
+    }
+    .hands-box__button {
+        width: 164px;
+        height: 40px;
+        font-size: 13px;
+    }
+}
